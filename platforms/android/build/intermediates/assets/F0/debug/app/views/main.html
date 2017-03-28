@@ -1,0 +1,8 @@
+<StackLayout orientation="vertical" >
+    <TextField hint="ID:" [(ngModel)]='username' ></TextField>
+    <TextField hint="PASSWORD:" [(ngModel)]='password' ></TextField>
+
+    <Button text="LOGIN" (tap)="btnLogin()"></Button>
+    <Label text="{{username}}"></Label>
+    <Label [text] = "password"> </Label>
+</StackLayout>
